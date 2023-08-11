@@ -1,11 +1,11 @@
-﻿# OpcodeGuide使用说明
-## 简介
-OpcodeGuide是用于制作LucaSystemTools中脚本导出所用到的OPCODE文件的一个可视化工具。
-## 窗体说明
+﻿# Hướng dẫn sử dụng OpcodeGuide
+## Giới thiệu
+OpcodeGuide là một công cụ hình ảnh để tạo tập tin OPCODE được sử dụng trong LucaSystemTools để xuất tập lệnh.
+## Giải thích giao diện
 ![](./../pic/s1.png)
-载入脚本后：
+Sau khi load file:
 ![](./../pic/s2.png)
-## 快速上手
+## Bắt đầu nhanh
 
 1. File->New/Open Opcode打开或新建一个OPCODE  
     新建时，需要先选择**游戏引擎的版本号**，具体版本号可根据发售日期和平台推测
@@ -20,3 +20,17 @@ OpcodeGuide是用于制作LucaSystemTools中脚本导出所用到的OPCODE文件
     如果无问题，点击“**应用全局**”即可重载此脚本，若出错，则可能需要在插入类型时勾选“**可空**”
 9. File->Save/Save As保存已经“**应用全局**”的OPCODE
 9. 使用此OPCODE.txt，配合LucaSystemTools即可导出需要数据
+
+1. File->New/Open Opcode để mở hoặc tạo mới một tập tin OPCODE
+    Khi tạo mới, bạn cần chọn số phiên bản của game engine, phiên bản cụ thể có thể được suy luận dựa trên ngày phát hành và nền tảng.
+2. File->Open Script để chọn thư mục chứa tập lệnh của trò chơi sau khi đã giải nén
+    Lưu ý: Thư mục này chỉ được chứa các tập tin tập lệnh, không thể có các tệp không liên quan khác.
+3. Chọn tên tập tin trong danh sách "Danh sách tập lệnh" bên trái, sau đó nhấn nút "Tải tập lệnh" trong phần "Kiểm soát tập lệnh" để tải tập lệnh.
+4. Sau khi mở tập lệnh, tập lệnh đầu tiên sẽ được tải tự động. Sử dụng nút "Phân tích câu lệnh tiếp theo" để chuyển đến câu lệnh cần chỉnh sửa.
+5. Chọn các byte trong cửa sổ xem trước byte phía dưới, giá trị tương ứng sẽ hiển thị trong phần "Xem trước dữ liệu".
+6. Chọn các loại có sẵn trong phần "Loại có thể chọn", nhấn nút "Chèn lên" hoặc "Chèn xuống" để thêm vào phần "Danh sách loại tham số".
+7. Nhấn nút "Áp dụng dòng này" để xem hiệu ứng phân tích trong hộp sửa đổi dưới cùng.
+    Nếu gặp vấn đề, nhấn nút "Tải lại" trong phần "Kiểm soát tập lệnh" để khôi phục.
+    Nếu không có vấn đề gì, nhấn nút "Áp dụng toàn cục" để tải lại tập lệnh này, nếu xảy ra lỗi, có thể cần kiểm tra tùy chọn "Có thể là rỗng" khi chèn loại tham số.
+8. File->Save/Save As để lưu tập tin OPCODE đã được "Áp dụng toàn cục".
+9. Sử dụng tập tin OPCODE.txt này cùng với LucaSystemTools để xuất dữ liệu cần thiết.

@@ -1,46 +1,47 @@
-# 部分功能已在新的 [LuckSystem](https://github.com/wetor/LuckSystem) 项目中实现  
-# 此项目之后基本不会更新  
+# (VIỆT HÓA LẠI)
+# MỘT SỐ CHỨC NĂNG ĐÃ ĐƯỢC TRIỂN KHAI TRONG DỰ ÁN [LuckSystem](https://github.com/wetor/LuckSystem) MỚI
+# DỰ ÁN NÀY SẼ ÍT ĐƯỢC CẬP NHẬT SAU NÀY
 ## LucaSystemTools ![test_release](https://github.com/YuriSizuku/LucaSystemTools/workflows/test_release/badge.svg)
 Prototype's galgame tools
 
 
-## 文件
+## FILE
 
-很多图像相关的提取代码都是[deqxj00](https://github.com/wetor/LucaSystemTools/commits?author=deqxj00) 写的，脚本的话都是我写的，CZ0和Pak和一些代码来自[LucaSystem](https://github.com/marcussacana/LucaSystem)。
+Code extract liên quan đến hình ảnh viết bởi [deqxj00](https://github.com/wetor/LucaSystemTools/commits?author=deqxj00) code script do tôi (wetor) viết，CZ0 và Pak cùng một số code được lấy từ [LucaSystem](https://github.com/marcussacana/LucaSystem)。
 
-图像结构相关解释可以等贴吧@DeQxJ00发帖
+Giải thích về cấu trúc hình ảnh có thể tìm hiểu thêm thông qua @DeQxJ00
 
-与air相同引擎的游戏脚本相关，可等贴吧@develseed发帖
+Liên quan đến code script của game sử dụng cùng engine AIR, có thể tìm hiểu thêm thông qua @develseed
 
-NS两款游戏脚本相关，看代码就行了~
+Liên quan đến code script của hai game NS, chỉ cần đọc code là có thể hiểu~
 
 **PakTools.cs**
 
-- 此引擎的pak包解包工具
+- Công cụ giải nén tập tin pak cho engine này
 
 **CZ0Parser.cs、CZ1Parser.cs、CZ3Parser.cs、CZ4Parser.cs**
 
-- Prototype新游戏好像用的都是这种图片，dat的升级版，CZ1提取和打包完成，CZ3只有提取， 新增CZ4
-- CZ中的颜色压缩32位转8位使用的是pngquant https://github.com/kornelski/pngquant
+- Dường như các game mới của Prototype đều sử dụng loại hình ảnh này, phiên bản nâng cấp của dat. Hoàn thành việc trích xuất và đóng gói cho CZ1, chỉ có trích xuất cho CZ3, thêm mới CZ4.
+- Trong CZ, việc nén màu từ 32 bit xuống 8 bit sử dụng công cụ pngquant https://github.com/kornelski/pngquant
 
 **DatParser.cs**
 
-- Psv air的几乎所有图像的提取程序，同引擎适用。具体打包请参照 [PSV AIR 汉化工具](https://github.com/YuriSizuku/GalgameReverse/blob/master/prototype/prot_dat.py)
+- Chương trình trích xuất hầu hết các hình ảnh của Psv air, tương thích với cùng engine. Để đóng gói cụ thể, xin xem [PSV AIR 汉化工具](https://github.com/YuriSizuku/GalgameReverse/blob/master/prototype/prot_dat.py)
 
 **FontInfoParser.cs**
 
-- island字体的info文件解析，同引擎适用，DeQxJ00整的 [CZ1和info解析](https://tieba.baidu.com/p/6033002424)
+- Giải mã tệp info của phông chữ island, tương thích với cùng engine, được thực hiện bởi DeQxJ00 [CZ1和info解析](https://tieba.baidu.com/p/6033002424)
 
 **PsbScript.cs**
 
-- air脚本的简单解析，psv的clannad应该同样适用，其中A3 A4结尾的为跳转指令，不写了，详情 [PSV AIR 汉化工具](https://github.com/YuriSizuku/GalgameReverse/blob/master/prototype/airpsv_text.py)
+- Giải mã cơ bản cho tập lệnh air, có thể áp dụng cho Clannad trên Psv. Những lệnh có đuôi A3 A4 là lệnh chuyển hướng, không viết ở đây, chi tiết [PSV AIR 汉化工具](https://github.com/YuriSizuku/GalgameReverse/blob/master/prototype/airpsv_text.py)
 
 **Script\*\*\*\*\.cs**
 
-- 脚本初步反汇编，支持修改然后汇编回去，文本增长、跳转判断均测试无问题  
-- 导出的格式有json、lua、txt等（lua不可执行）
+- Phân tích cơ bản cho tập lệnh, hỗ trợ chỉnh sửa và hợp ngược trở lại. Thử nghiệm không có vấn đề về tăng kích thước văn bản hay điều kiện nhảy.
+- Có thể xuất ra dưới dạng json, lua, txt (lua không thể thực thi).
 
-**内置支持游戏**
+**Hỗ trợ tích hợp sẵn cho các game.**
 >- 《Summer Pocket》Nintendo Switch  
 >- 《Clannad》Nintendo （Opcode未完善）  
 >- 《Tomoyo After Its a Wonderful Life CS Edition》Nintendo Switch  
@@ -49,23 +50,22 @@ NS两款游戏脚本相关，看代码就行了~
 >- 《ISLAND》Psvita  
 >- ...
 
-- 支持添加新的自定义Opcode文件，不同的游戏opcode、参数列表也不尽相同，理论支持绝大多数PSV、NS所有LucaSystem引擎的游戏
+- Hỗ trợ thêm tập tin Opcode tùy chỉnh mới, các Opcode và danh sách tham số khác nhau cho các trò chơi khác nhau. Theo lý thuyết, hỗ trợ hầu hết các trò chơi sử dụng LucaSystem engine trên hầu hết PSV và NS.
 
-## 能做什么
+## Có thể làm gì
 
-- 做NS版的Summer Pocket 、Tomoyo After Its a Wonderful Life、Flowers - Shiki完整汉化没问题了，NS版的Clannad的话要改下opcode的解释。
+- Việc dịch đầy đủ cho phiên bản NS của Summer Pocket, Tomoyo After Its a Wonderful Life, Flowers - Shiki không còn vấn đề gì, còn đối với phiên bản NS của Clannad thì cần chỉnh sửa giải thích opcode.
 
-- 理论上NS上的几乎所有prototype的游戏都能汉化，不过需要一些操作获取到对应游戏的opcode列表
+- Lý thuyết trên NS, hầu hết các trò chơi prototype đều có thể dịch, tuy nhiên cần thực hiện một số thao tác để lấy danh sách opcode tương ứng cho từng trò chơi.
 
-- psv上和air同期的prototype的游戏，只要文件结构相似，那么图像基本是都能提取的，
+- Đối với các trò chơi prototype trên psv và cùng thời kỳ với air, miễn là cấu trúc tệp tương tự, hình ảnh cơ bản đều có thể trích xuất,
 
-- 大体上psv的clannad air rewrite 是一类 ，psv上的 island flowers系列等是一类 ，如遇到同引擎的一些游戏可以参考下
+- Tóm lại, trò chơi clannad air rewrite trên psv cùng một loại, còn các dòng trò chơi island flowers trên psv là một loại khác, trong trường hợp gặp các trò chơi cùng engine, bạn có thể tham khảo.
 
-- 支持psv的ISLAND脚本编译与反编译
+- Hỗ trợ biên dịch và giải dịch kịch bản ISLAND trên psv.
 
-- 如果对**PSV、NS平台，此引擎**的一些游戏支持有问题，可以提交issues反馈
-
-## 使用说明
+- Nếu gặp vấn đề về việc hỗ trợ các trò chơi trên **nền tảng PSV và NS, sử dụng engine này**, bạn có thể gửi phản hồi qua việc nộp các vấn đề (issues).
+## Hướng dẫn sử dụng
 ```
 Options:
   -t|--file-type <FILE_TYPE>                    FileType [cz0] [cz1] [cz3] [cz4] [dat] [pak] [psb] [info] [scr]
@@ -88,17 +88,17 @@ Options:
 ## Example
 ### Script
 
-用txt、lua、json导出SummerPockets的一个脚本
+Xuất một tập lệnh của Summer Pockets ra dưới định dạng txt, lua, json.
 
 `LucaSystemTools -t scr -m export -f .\10_プロローグ0725 -o .\10_725 -opcode SP -old -lua -json`  
-输出文件：10_725.txt  10_725.lua   10_725.json  
+file output：10_725.txt  10_725.lua   10_725.json  
 
-导入SummerPockets的一个脚本  
+import file cho Summer Pockets.
 `LucaSystemTools -t scr -m import -f .\10_725.json -o .\10_725.1 -opcode SP`  
 `LucaSystemTools -t scr -m import -f .\10_725.json -o .\10_725.2 -opcode SP -json`  
 `LucaSystemTools -t scr -m import -f .\10_725.lua -o .\10_725.3 -opcode SP -lua`  
 `LucaSystemTools -t scr -m import -f .\10_725.txt -o .\10_725.4 -opcode SP -old`  
-四种不同方式导入脚本  
+Bốn cách khác nhau để import file.
 
 ## OpcodeGuide
 [查看README](./LucaSystemTools/README.md)
