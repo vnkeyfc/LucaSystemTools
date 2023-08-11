@@ -1,7 +1,8 @@
 # (VIỆT HÓA LẠI)
 # MỘT SỐ CHỨC NĂNG ĐÃ ĐƯỢC TRIỂN KHAI TRONG DỰ ÁN [LuckSystem](https://github.com/wetor/LuckSystem) MỚI
 # DỰ ÁN NÀY SẼ ÍT ĐƯỢC CẬP NHẬT SAU NÀY
-## LucaSystemTools ![test_release](https://github.com/YuriSizuku/LucaSystemTools/workflows/test_release/badge.svg)
+
+## LucaSystemTools
 Prototype's galgame tools
 
 
@@ -94,6 +95,7 @@ Xuất một tập lệnh của Summer Pockets ra dưới định dạng txt, lu
 file output：10_725.txt  10_725.lua   10_725.json  
 
 import file cho Summer Pockets.
+
 `LucaSystemTools -t scr -m import -f .\10_725.json -o .\10_725.1 -opcode SP`  
 `LucaSystemTools -t scr -m import -f .\10_725.json -o .\10_725.2 -opcode SP -json`  
 `LucaSystemTools -t scr -m import -f .\10_725.lua -o .\10_725.3 -opcode SP -lua`  

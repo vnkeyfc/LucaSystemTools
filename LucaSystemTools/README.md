@@ -5,7 +5,7 @@ OpcodeGuide là một công cụ hình ảnh để tạo tập tin OPCODE đư�
 ![](./../pic/s1.png)
 Sau khi load file:
 ![](./../pic/s2.png)
-## Bắt đầu nhanh
+## 快速上手
 
 1. File->New/Open Opcode打开或新建一个OPCODE  
     新建时，需要先选择**游戏引擎的版本号**，具体版本号可根据发售日期和平台推测
@@ -20,7 +20,7 @@ Sau khi load file:
     如果无问题，点击“**应用全局**”即可重载此脚本，若出错，则可能需要在插入类型时勾选“**可空**”
 9. File->Save/Save As保存已经“**应用全局**”的OPCODE
 9. 使用此OPCODE.txt，配合LucaSystemTools即可导出需要数据
-
+## Bắt đầu nhanh (viêt hóa từ trên)
 1. File->New/Open Opcode để mở hoặc tạo mới một tập tin OPCODE
     Khi tạo mới, bạn cần chọn số phiên bản của game engine, phiên bản cụ thể có thể được suy luận dựa trên ngày phát hành và nền tảng.
 2. File->Open Script để chọn thư mục chứa tập lệnh của trò chơi sau khi đã giải nén
