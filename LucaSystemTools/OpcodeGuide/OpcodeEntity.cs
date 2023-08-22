@@ -74,7 +74,7 @@ namespace OpcodeGuide
                 if (tempVersion != 0 && tempVersion != scriptVersion) 
                 {
                     scriptVersion = tempVersion;
-                    Debug.WriteLine("Opcode中的版本与设置不符合，默认采用文件中的版本");
+                    Debug.WriteLine("The version in Opcode does not match the settings, and the version in the file is used by default");
                 }
             }
         }
@@ -384,7 +384,7 @@ namespace OpcodeGuide
                 }
                 else
                 {
-                    Debug.WriteLine("已加载opcode文件：{0}", Path.GetFileName(opcode));
+                    Debug.WriteLine("opcode file loaded：{0}", Path.GetFileName(opcode));
                 }
 
             }
@@ -399,7 +399,7 @@ namespace OpcodeGuide
                 {
                     bytesToOpcodeDict.Add((byte)i, new ScriptOpcode((byte)i, "OP_" + ScriptUtil.Byte2Hex((byte)i)));
                 }
-                Debug.WriteLine("无opcode文件或无opcode，创建默认opcode");
+                Debug.WriteLine("No opcode file or no opcode, create default opcode");
             }
             return version;
         }
